@@ -28,6 +28,8 @@ var detail_text_brand = document.getElementById('detail_text_brand');
 var detail_text_title = document.getElementById('detail_text_title');
 var detail_text_price = document.getElementById('detail_text_price');
 var detail_text_url = document.getElementById('detail_text_url');
+var detail_sub_img=document.querySelectorAll('#detail_sub_img');
+
 
 
 window.onload = function () {
