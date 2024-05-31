@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task2</title>
+
+        <script>
+            function calculate() {
+                var Fi = document.getElementById("First_integer").value;
+                var Si = document.getElementById("Second integer").value;
+                var total = Number(Fi) + Number(Si);
+                document.getElementById("Total").value = total;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Simple Calculator</h2>
+        <form action="" method="POST">
+            First integer : <input type="text" id="First_integer" /><br />
+            Second integer : <input type="text" id="Second integer" /><br />
+            Total : <input type="text" id="Total" /><br />
+
+            <input type="button" value="Calculate" onclick="calculate();" />
+        </form>
+    </body>
+</html>

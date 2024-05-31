@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>The Document Object</h1>
+            <h2 id="blue">The querySelectorAll() Method</h2>
+
+            <p>Add a background color all elements with class="example":</p>
+            <h2 class="example">A heading</h2>
+            <p class="example">A paragraph.</p>
+
+            <script>
+                const nodeList = document.querySelectorAll(".example");
+                for (let i = 0; i < nodeList.length; i++) {
+                    nodeList[i].style.backgroundColor = "yellow";
+                }
+
+                const blue = document.getElementById("blue");
+                blue.style.backgroundColor = "blue";
+            </script>
+        </body>
+    </head>
+</html>

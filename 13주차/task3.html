@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example of jQuery Method Queue</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var originalCss = {
+                    width: '200px',
+                    height: '100px',
+                    fontSize: '24px',
+                    backgroundColor: 'lightgreen',
+                    borderWidth: '0px',
+                    padding: '0px',
+                };
+                $('#start').click(function() {
+                    $('#message')
+                    .animate({ width: '800px' }, 3000)
+                    .animate({
+                        height: '400px',
+                        fontSize: '72px',
+                        borderColor: '#f37736',
+                        borderWidth: '40px',
+                        }, 3000)
+                    });
+                    $('#reset').click(function() {
+                        $('#message').css(originalCss);
+                    });
+                });
+        </script>
+        <style>
+            #message {
+                width: 200px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: lightgreen;
+                font-size: 24px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                border: solid 0px;
+                border-color: #163c16;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="message">Hello World!</div>
+        <button id="start">Start Chaining</button>
+        <button id="reset">Reset</button>
+    </body>
+</html>

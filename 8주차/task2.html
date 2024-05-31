@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <script>
+        function Show() {
+            var paragraph = document.createElement('p');
+            var text = document.createTextNode('JavaScript DOM is fun to learn');
+            paragraph.appendChild(text);
+            paragraph.style.color = 'green';
+            paragraph.style.fontWeight = 'bold';
+            document.body.appendChild(paragraph);
+        }
+    </script>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h3>DOM innerHTML Property</h3>
+    <p>JavaScript DOM is fun to learn</p>
+    
+    <input type="button" value="Try it" onclick="Show();" />
+</body>
+</html>

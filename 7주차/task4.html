@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>JavaScript Controls</h1>
+        <br>
+        <p>Numbers to humanize:</p>
+        <br>
+        <script>
+            var arr = [1, 8, 301, 402, 711];
+            for(var n of arr) {
+                if(n % 100 == 1) {
+                    document.write(n + "st");
+                } else if(n % 100 == 2) {
+                    document.write(n + "nd");
+                } else if(n % 100 == 3) {
+                    document.write(n + "rd");
+                } else {
+                    document.write(n + "th");
+                }
+                document.write("<br>");
+            }
+            </script>
+    </body>
+</html>

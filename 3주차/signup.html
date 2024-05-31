@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+    </head>
+
+    <body>
+        <form>
+            <label for="AID:">Account ID:</label><br>
+            <input text="text" id="AID" name="AID"><br>
+            <label for="PW:">Password:</label><br>
+            <input text="text" id="PW" name="PW"><br>
+            <br>
+
+            <fieldset>
+                <legend>Personal Infromation</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <lable for="gender">Gender</lable><br>
+                <div id="gender">
+                    <input type="radio" id="male" name="gdr">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gdr">
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Current position</legend>
+                <div id="postion">
+                    <input type="checkbox" id="front">
+                    <label for="front">Front-end developer</label><br>
+                    <input type="checkbox" id="back">
+                    <label for="back">Back-end developer</label><br>
+                    <input type="checkbox" id="infra">
+                    <label for="infra">Infrastructure developer</label><br>
+                </div>
+            </fieldset>
+            <br>
+
+            <button type = "button">Submit</button>
+            <button type = "button">Reset</button>
+            <button type = "button">Cancel</button>
+        </form>
+        <br>
+
+        <a href="home.html">Go to home</a>
+    </body>
+</html>

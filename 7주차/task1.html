@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascrpit function</h1>
+    <pre id="output"></pre>
+    <script>
+        function square(num) {
+            return num * num;
+        }
+
+        function halfOf(num) {
+            return num / 2;
+        }
+
+        function percentOf(num, percent) {
+            return (num / 100) * percent;
+        }
+
+        function areaOfCircle(radius) {
+            return Math.PI * square(radius);
+        }
+
+        let output = "";
+        output += "The result of squaring the number 3 is " + square(3) + "\n";
+        output += "Half of 5 is " + halfOf(5) + "\n";
+        output += "5 is 50% of 10\n";
+        output += "The result of squaring the number 2 is " + square(2) + "\n";
+        output += "The area of circle with radius 2 is " + areaOfCircle(2) + "\n\n";
+
+        output += "Do crazy stuff\n";
+        output += "Half of 5 is " + halfOf(5) + "\n";
+        output += "The result of squaring the number 2.5 is " + square(2.5) + "\n";
+        output += "The result of squaring the number 6.25 is " + square(6.25) + "\n";
+        output += "The area of circle with radius 6.25 is " + areaOfCircle(6.25) + "\n";
+        output += "6.25 is 5.092958178946651% of 122.71846303085513\n";
+
+        document.getElementById("output").textContent = output;
+    </script>
+</body>
+</html>

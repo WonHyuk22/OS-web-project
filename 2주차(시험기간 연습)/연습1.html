@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My homepage</title>
+        <style>
+            table, th, td {
+                background-color : yellow;}
+                #account {
+                    background-color : blue;}
+
+                    * {
+            background-color : aqua;
+        }
+        a:hover {
+            background-color : red;
+        }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+            <tr>
+                <td>1period</td>
+                <td rowspan="2">HTML</td>
+                <td colspan="2">JAVA</td>
+            </tr>
+            <tr>
+                <td>2period</td>
+                <td>C</td>
+                <td>JAVA</td>
+            </tr>
+        </table>
+        <audio src="music.mp3" controls autoplay>
+            Your browser does not support the audio element.1
+        </audio>
+        <video src="movie.mp4" controls>
+            Your browser does not support the video element.
+        </video>
+        <form action="/action_page.php" method="get">
+        <input type="checkbox" value="눌러봐" onclick="alert('규승아 공부하자!')"><br>
+        <label for="account">계좌번호 : </label><br>
+        <input type="text" id="account"><br>
+        <label for="password">비밀번호 : </label><br>
+        <input type="password" id="password"><br>
+        <input type="submit" value="로그인"><br>
+        <input type="reset">
+        <input type="date">
+        <label for="gender">gender</label><br>
+        <div id = "gender">
+            <input type="radio" id="male" name="gdr">
+            <label for="male"> Male </label><br> //radio의 이름 부분에는 id값과 동일하게 들어가야됨
+        </div>
+    </form>
+
+
+    <audio src="music.mp3" controls autoplay loop muted>
+
+        
+    </audio>
+    <ul>
+        <li>Lecture</li>
+        <ol>
+            <li>Web Programming</li>
+            <li>Database</li>
+        </ol>
+        <li>Homepage</li>
+        <ol>
+            <li>Google</li>
+            <li>Naver</li>
+        </ol>
+    </ul>
+    
+    <table border = "1">
+        <tr>
+            <td colspan="5">Introduction</td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <th>lecturer</th>
+            <th>Introduction</th>
+            <th>Code</th>
+            <th>Practice</th>
+        </tr>
+        <tr>
+            <td>LE</td>
+            <td>LE</td>
+            <td>LE</td>
+            <td>LE</td>
+            <td>LE</td>
+        </tr>
+        <tr>
+            <td>LE</td>
+            <td>LE</td>
+            <td>LE</td>
+            <td>LE</td>
+            <td>LE</td>
+        </tr>
+    </table>
+
+
+
+
+
+    </body>
+</html>
