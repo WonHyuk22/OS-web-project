@@ -22,13 +22,14 @@ var firstTopElement = document.getElementsByClassName("top_8_to_20")[0];
 var secondTopElement = document.getElementsByClassName("top_8_to_20")[1];
 // detail set up
 var list_title = document.getElementById('list_title');
-var detail_img = document.getElementById('detail_img');
-var sub_img=document.getElementById('sub_img');
 var detail_text_brand = document.getElementById('detail_text_brand');
 var detail_text_title = document.getElementById('detail_text_title');
 var detail_text_price = document.getElementById('detail_text_price');
 var detail_text_url = document.getElementById('detail_text_url');
-var detail_sub_img=document.querySelectorAll('#detail_sub_img');
+// detail imges
+
+var house1_img_list=["img\house_collection\house1\sub_img\sub1.avif"];
+
 
 
 
@@ -184,13 +185,31 @@ function detailSetUp(n, m) {
 }
 
 
+function sub_img() {
+    
+    var detail_sub_imgs = document.querySelectorAll('.detail_sub_img');
+    
+    detail_sub_imgs.forEach(function(detail_sub_img, index) {
+        var sub_img = document.createElement("img");
+        sub_img.src = house1_img_list[index] || '#'; // If no path is found, set default src
+        sub_img.alt = "qwe";
+        detail_sub_img.appendChild(sub_img);
+    });
+}
+
+// Call the function to append the images
+sub_img();
+
+
+
+
 //musinsa top data
 const mt_cardData = [
     {
         "brand": "청주시 흥덕구 복대동",
         "name": "월세 200/40",
         "rank": "1",
-        "img": "img/house collection/house1/for_sale1.avif"
+        "img": "img/house_collection/house1/for_sale1.avif"
     },
     {
         "brand": "청주시 서원구 개신동",
