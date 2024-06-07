@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GongBang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .introduce {
+            text-align: center;
+            padding: 100px;
+            position: relative;
+        }
+        .introduce h1 {
+            font-size: 100px;
+            margin: 0;
+            display: inline-block;
+            position: relative;
+        }
+        .introduce p {
+            font-size: 18px;
+            font-family: 'PyeongChangPeace-Bold';
+            margin: 0;
+            color: #666;
+        }
+        .dynamic-image {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: move 2s infinite;
+        }
+        @keyframes move {
+            0% { left: calc(50% + 150px); }
+            50% { left: calc(50% + 180px); }
+            100% { left: calc(50% + 150px); }
+        }
+        .information {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #000;
+            color: #fff;
+            width: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .card img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h2 {
+            font-size: 24px;
+            margin: 10px;
+        }
+        .card p {
+            font-size: 16px;
+            margin: 5px;
+        }
+        .card a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .information:hover .card:not(:hover) {
+            transform: scale(0.9);
+        }
+        .stars-container {
+            display: inline-flex;
+            align-items: center;
+        }
+        .stars {
+            display: inline-block;
+            position: relative;
+            font-size: 20px;
+            cursor: pointer;
+            color: #ffd700;
+            margin-left: 5px;
+        }
+        .stars:before {
+            content: '★★★★★';
+            display: block;
+        }
+        .stars:hover:before {
+            content: '★★★★★';
+            color: #ffd700;
+        }
+        .rating-text {
+            font-size: 16px;
+            color: #F6F6F6;
+        }
+        .card p.text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="introduce">
+        <h1>공방</h1>
+        <img src="path_to_your_image.png" alt="Dynamic House" class="dynamic-image">
+        <p>저희 사이트는 각 공인중개사가 가지고 있는 매물을 좀 더 쉽게 찾아볼 수 있는 사이트입니다.</p>
+    </div>
+    <div class="information">
+        <div class="card">
+            <img src="./img/태화.png" alt="Tae Hwa">
+            <h2>김태화</h2>
+            <div class="stars-container">
+                <span class="rating-text">별점 :</span>
+                <div class="stars" title="별점 : ★★★★★"></div>
+            </div>
+            <p class="text">계약건수 : 100</p>
+            <p class="text">안녕하세요, 태화 공인중개사입니다!</p>
+        </div>
+        <div class="card">
+            <img src="./img/정현.jpg" alt="Jung Hyun">
+            <h2>이정현</h2>
+            <div class="stars-container">
+                <span class="rating-text">별점 :</span>
+                <div class="stars" title="별점 : ★★★★★"></div>
+            </div>
+            <p class="text">계약건수 : 100</p>
+            <p class="text">안녕하세요, 정현 공인중개사입니다!</p>
+        </div>
+        <div class="card">
+            <img src="./img/원혁.jpg" alt="Won Hyuk">
+            <h2>최원혁</h2>
+            <div class="stars-container">
+                <span class="rating-text">별점 :</span>
+                <div class="stars" title="별점 : ★★★★★"></div>
+            </div>
+            <p class="text">계약건수 : 100</p>
+            <p class="text">안녕하세요, 원혁 공인중개사입니다!</p>
+        </div>
+    </div>
+    <script>
+        const stars = document.querySelectorAll('.stars');
+        
+        stars.forEach(star => {
+            star.addEventListener('mouseover', () => {
+                star.style.transform = 'scale(1.2)';
+            });
+
+            star.addEventListener('mouseout', () => {
+                star.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
